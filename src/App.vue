@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <test msg="Hello"></test>
   </div>
 </template>
 
 <script>
+import Test from './components/Test.vue'
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    Test
+  }
 }
 </script>
 
